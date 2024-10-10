@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5XLxrHJYbhMRLDJgn/BAtGEO6dUtaZLdpGV0dIW/M6Em3o7kFpUW6lVZ2fBqmjRk" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Register</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <form action="/api/post-register" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+                    </div><br>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+                    </div><br>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" name="age" id="age" placeholder="Enter age" required>
+                    </div><br>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6kM026lF5ffbt8YHCWR9Fhtc+6Zr9KK+oWf4R1OcqsXw" crossorigin="anonymous"></script>
+
+</body>
+</html>
